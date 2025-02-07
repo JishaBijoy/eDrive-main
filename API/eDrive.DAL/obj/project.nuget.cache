@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "rAP7P83MD+r/Hez0PJQfPSs+9LEkpbyfBweHbsNqfhi6XnGkp2wFQTS/KR1JVSDmBJgxRXCM2gFdUJqnWyb6rg==",
+  "success": false,
+  "projectFilePath": "C:\\Projects\\eDrive\\eDrive\\API\\eDrive.DAL\\eDrive.DAL.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Extensions.Options (>= 7.0.1)' for 'net6.0'.",
+      "libraryId": "Microsoft.Extensions.Options",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'System.Data.SqlClient (>= 4.8.5)' for 'net6.0'.",
+      "libraryId": "System.Data.SqlClient",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

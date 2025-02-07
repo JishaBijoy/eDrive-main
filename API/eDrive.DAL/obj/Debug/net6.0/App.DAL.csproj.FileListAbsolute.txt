@@ -1,0 +1,12 @@
+D:\Samples\CoreAPIADO\App.DAL\bin\Debug\net6.0\App.DAL.deps.json
+D:\Samples\CoreAPIADO\App.DAL\bin\Debug\net6.0\App.DAL.dll
+D:\Samples\CoreAPIADO\App.DAL\bin\Debug\net6.0\App.DAL.pdb
+D:\Samples\CoreAPIADO\App.DAL\obj\Debug\net6.0\App.DAL.csproj.AssemblyReference.cache
+D:\Samples\CoreAPIADO\App.DAL\obj\Debug\net6.0\App.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Samples\CoreAPIADO\App.DAL\obj\Debug\net6.0\App.DAL.AssemblyInfoInputs.cache
+D:\Samples\CoreAPIADO\App.DAL\obj\Debug\net6.0\App.DAL.AssemblyInfo.cs
+D:\Samples\CoreAPIADO\App.DAL\obj\Debug\net6.0\App.DAL.csproj.CoreCompileInputs.cache
+D:\Samples\CoreAPIADO\App.DAL\obj\Debug\net6.0\App.DAL.dll
+D:\Samples\CoreAPIADO\App.DAL\obj\Debug\net6.0\refint\App.DAL.dll
+D:\Samples\CoreAPIADO\App.DAL\obj\Debug\net6.0\App.DAL.pdb
+D:\Samples\CoreAPIADO\App.DAL\obj\Debug\net6.0\ref\App.DAL.dll

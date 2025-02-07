@@ -1,0 +1,223 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap'); 
+@import 'react-big-calendar/lib/sass/styles';
+  @import 'react-big-calendar/lib/addons/dragAndDrop/styles'; // if using DnD
+
+:root {
+    --primary_1:rgb(255,188,65);
+    --primary_2:rgb(92,184,92);
+    --color1:#fff;
+    --color2:79,79,79;
+    --bg:246,248,252;
+    --bg1:211,227,253;
+  } 
+
+$mynewcolor:#ffbe48;
+.btn-primary {
+    color:#fff;
+    @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
+}
+
+.btn-outline-primary {
+    @include button-outline-variant($mynewcolor, #222222, lighten($mynewcolor,5%), $mynewcolor);
+}
+.table-striped > tbody > tr:nth-of-type(odd) > *{
+    background-color: rgba(var(--bg1), 0.2);
+    box-shadow:none;
+}
+.table-hover > tbody > tr:hover > * {
+    background-color: rgba(var(--bg1),0.1);
+    box-shadow:none;
+}
+.table{
+    box-shadow:none;
+    border-color: #fff !important;
+    td{
+        vertical-align: middle;
+    }
+    &.studentList{
+        td,th{
+            &:first-child{
+                width:100px;
+                text-align: center;
+            }
+            &:last-child{
+                width:150px;
+               
+            }
+        }
+    }
+}
+.form-check-input:checked{
+    background-color: $mynewcolor;
+    border-color: $mynewcolor;
+}
+
+._ft10{font-size: 10px !important;}
+._ft12{font-size: 12px !important;}
+._ft14{font-size: 14px !important;}
+._ft16{font-size: 16px !important;}
+._ft18{font-size: 18px !important;}
+._ft20{font-size: 20px !important;}
+._ft20{font-size: 20px !important;}
+._ft24{font-size: 24px !important;}
+
+body{
+    background-color: rgb(var(--bg));
+    color:rgb(var(--color2));
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.rotate90{transform: rotate(90deg);}
+a{
+    color:rgb(var(--color2));  
+}
+
+
+._search {
+
+    --rad: .7rem;
+    --dur: .3s;
+    --color-dark: #2f2f2f;
+    --color-light: #f6f9ff;
+   
+    --font-fam: 'Lato', sans-serif;
+    --height: 45px;
+    --btn-width: 6rem;
+    --bez: cubic-bezier(0, 0, 0.43, 1.49);
+    position: relative;
+    width: 30rem;
+    background: var(--primary_1);
+    border-radius: var(--rad);
+  
+  input, button {
+    height: var(--height);
+    font-family: var(--font-fam);
+    border: 0;
+    color: var(--color-dark);
+    font-size: 14px;
+  }
+  input[type="search"] {
+    outline: 0; // <-- shold probably remove this for better accessibility, adding for demo aesthetics for now.
+    width: 100%;
+    background: var(--color-light);
+    padding: 0 1.6rem;
+    border-radius: var(--rad);
+    appearance: none; //for iOS input[type="search"] roundedness issue. border-radius alone doesn't work
+    transition: all var(--dur) var(--bez);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+  }
+  button {
+    display: none; // prevent being able to tab to it
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--btn-width);
+    font-weight: bold;
+    background: var(--primary_1);;
+    border-radius: 0 var(--rad) var(--rad) 0;
+  }
+  input:not(:placeholder-shown) {
+    border-radius: var(--rad) 0 0 var(--rad);
+    width: calc(100% - var(--btn-width));
+    + button {
+      display: block;
+    }
+  }
+  label {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+}
+
+
+
+.rad-label {
+  display: flex;
+  align-items: center;
+
+  border-radius: 100px;
+  padding: 3px 6px;
+  margin: 10px 0 0;
+
+  cursor: pointer;
+  transition: .3s;
+
+&:hover,
+&:focus-within {
+  background: hsla(0, 0%, 80%, .14);
+}
+
+.rad-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.rad-design {
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+
+  background: var(--primary_1);
+  position: relative;
+}
+
+.rad-design::before {
+  content: '';
+
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+
+  background: hsl(0, 0%, 90%);
+  transform: scale(1.1);
+  transition: .3s;
+}
+
+.rad-input:checked+.rad-design::before {
+  transform: scale(0);
+}
+
+.rad-text {
+  color: hsl(0, 0%, 60%);
+  margin-left: 14px;
+  letter-spacing: 3px;
+  
+  font-size: 14px;
+
+
+  transition: .3s;
+}
+
+.rad-input:checked~.rad-text {
+  color: hsl(0, 0%, 40%);
+}
+
+
+/* ABS */
+/* ====================================================== */
+.abs-site-link {
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  color: hsla(0, 0%, 0%, .5);
+  font-size: 16px;
+}
+}
+.radio_w {
+  >label{
+    transform: scale(0.95) translateY(-1.2rem) translateX(0.15rem);
+  }
+}

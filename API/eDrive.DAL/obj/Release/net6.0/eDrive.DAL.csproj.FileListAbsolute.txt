@@ -1,0 +1,12 @@
+D:\Projects\eDrive\API\eDrive.DAL\bin\Release\net6.0\eDrive.DAL.deps.json
+D:\Projects\eDrive\API\eDrive.DAL\bin\Release\net6.0\eDrive.DAL.dll
+D:\Projects\eDrive\API\eDrive.DAL\bin\Release\net6.0\eDrive.DAL.pdb
+D:\Projects\eDrive\API\eDrive.DAL\obj\Release\net6.0\eDrive.DAL.csproj.AssemblyReference.cache
+D:\Projects\eDrive\API\eDrive.DAL\obj\Release\net6.0\eDrive.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\eDrive\API\eDrive.DAL\obj\Release\net6.0\eDrive.DAL.AssemblyInfoInputs.cache
+D:\Projects\eDrive\API\eDrive.DAL\obj\Release\net6.0\eDrive.DAL.AssemblyInfo.cs
+D:\Projects\eDrive\API\eDrive.DAL\obj\Release\net6.0\eDrive.DAL.csproj.CoreCompileInputs.cache
+D:\Projects\eDrive\API\eDrive.DAL\obj\Release\net6.0\eDrive.DAL.dll
+D:\Projects\eDrive\API\eDrive.DAL\obj\Release\net6.0\refint\eDrive.DAL.dll
+D:\Projects\eDrive\API\eDrive.DAL\obj\Release\net6.0\eDrive.DAL.pdb
+D:\Projects\eDrive\API\eDrive.DAL\obj\Release\net6.0\ref\eDrive.DAL.dll

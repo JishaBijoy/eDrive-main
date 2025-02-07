@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\eDrive.API.props" />
+</Project>

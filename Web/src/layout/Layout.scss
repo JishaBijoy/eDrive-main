@@ -1,0 +1,193 @@
+
+.disabled{pointer-events: none;}
+header._m-h{
+height: 64px;
+padding: 8px;
+z-index: 1;
+
+._fa-menu{
+
+    height: 48px;
+    width:48px;
+    color: rgb(var(--color2));
+    @media (min-width:992px) {
+        margin-right: 12px;
+        margin-left: 7px;
+        &:hover{
+            border-radius: 50%;
+            background-color: rgba(0,0,0,0.05);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
+}
+
+.e-drive_logo{
+
+    padding-left: 8px;
+    @media (min-width:992px) {
+
+        padding-left: 24px;
+    }
+    img{
+
+        height: 34px;
+        @media (min-width:992px) {height: 60px;}
+    }
+}
+
+._faBell{
+
+    height: 35px;
+    width: 35px;
+    background-color: var(--color2);
+    >span{
+        color: var(--color1);
+        background-color: var(--color2);
+        font-size: 8px;
+        line-height: 16px;
+        font-weight: bold;
+        height: 16px;
+        width: 16px;
+        text-align: center;
+        left: 65%;
+    }
+}
+
+._logout{
+
+    .dropdown-toggle{
+
+
+        border: none;
+        &::after{
+            display: none;
+        }
+    }
+    ._p-icon{
+
+        height: 35px;
+        width: 35px;
+        background-color: var(--color1);
+        overflow: hidden;
+        position: relative;
+        img{
+            left: 50%;
+            top:50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            height: 107%;
+        }
+    }
+    
+}
+
+}
+
+
+
+// left nav===========================================
+
+.leftNav-w{
+
+    max-width: 80px;
+    min-width: 80px;
+    background-color: rgba(var(--bg1),0.2);
+
+    >div{
+        height:calc(100vh - 64px);
+        overflow: auto;
+    }
+    &::before{
+        height: 64px;
+        content: "";
+        margin-top: -64px;
+        display: block;
+        background-color: rgba(var(--bg1),0.2);
+    }
+    a{
+        text-decoration: none;
+        color: rgb(var(--color2));
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 18px;
+        &.active{
+            color: var(--primary_1);
+        }
+    }
+}
+
+// left nav sub menu===========================================
+
+
+.l-sub-menu{
+    min-width: 225px;
+    max-width: 225px;
+    padding-right: 8px;
+    overflow: auto;
+    a{
+     &.active{
+        color: var(--primary_1);
+     }
+    }
+}
+
+
+._outlet{
+
+background-color: var(--color1);
+overflow: auto;
+height: calc(100vh - 70px);
+    overflow: auto;
+
+@media (max-width:576px) {
+
+    min-height: calc(100vh - 118px);
+    
+}
+
+
+}
+// --------------------------------------------
+
+._btnDropdown{
+    .dropdown-toggle{
+        width:45px;
+        height:45px;
+        &::after{
+            display: none !important;
+        }
+    }
+}
+
+
+._floatingInput{
+    >input, &.form-floating > .form-select{
+     min-height: 45px !important;
+     height: 45px !important;
+    }
+    
+ &.form-floating > label, &.form-floating > .form-select{
+     padding: 0.67rem 0.75rem;
+ }
+ 
+    &.form-floating > .form-control:focus ~ label, &.form-floating > .form-control:not(:placeholder-shown) ~ label, &.form-floating > .form-control-plaintext ~ label, &.form-floating > .form-select ~ label {
+     
+     transform: scale(0.95) translateY(-1.5rem) translateX(0.15rem);
+     height: 32px;
+ }
+ 
+
+ &.form-floating > .form-control, &.form-floating > .form-control-plaintext {
+    height: calc(3.5rem + calc(var(--bs-border-width) * 2));
+    min-height: calc(6.5rem + calc(var(--bs-border-width) * 2));
+    line-height: 2.50;
+}
+
+ }
+
+ ._p_sticky_b{
+    background-color: var(--color1);
+    bottom: 0;
+    z-index: 2;
+ }
